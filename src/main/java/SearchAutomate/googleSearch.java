@@ -13,6 +13,7 @@ public class googleSearch {
         System.setProperty("webdriver.chrome.driver","/Users/manas/Downloads/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://google.com");
+        
 
         WebElement SearchBox = driver.findElement(By.xpath("//*[@id=\"lst-ib\"]"));
         SearchBox.sendKeys("Melania Trump");
